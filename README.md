@@ -8,7 +8,7 @@ A lightweight, static B2B product catalog for [yakipet.com](https://yakipet.com)
 
 Each product has its own folder under `images/products/`. The catalog card uses that product's `cover-web.jpg`; the other photos in the folder are the original detail images.
 
-To change a cover, add an optimized square image to the product folder and update the matching `src` path and `alt` text in `index.html`. Images around 1200 × 1200 px work well and should be compressed so the site stays fast. Keep the high-resolution originals if you need them for future product-detail pages, but avoid loading them directly on the homepage.
+To change a cover, add an optimized image to the product folder and update the matching `src` path and `alt` text in `index.html`. Images around 800 px wide work well and should be compressed so the site stays fast. Product cards use `object-fit: contain`, so the whole product remains visible without being cropped. Keep the high-resolution originals if you need them for future product-detail pages, but avoid loading them directly on the homepage.
 
 ### Update products and prices
 
